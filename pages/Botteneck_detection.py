@@ -123,7 +123,7 @@ with left:
 
     fig.update_traces(line_color="#8ecae6")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -136,7 +136,7 @@ with right:
 
     fig.update_traces(line_color="#90be6d")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 # -----------------------------
 # Feed Flow & Catalyst Activity
 # -----------------------------
@@ -153,7 +153,7 @@ with left:
 
     fig.update_traces(line_color="#f9c74f")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -165,7 +165,7 @@ with right:
     )
     fig.update_traces(line_color="#f4a261")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 # -----------------------------
 # Energy vs Product Yield
@@ -184,7 +184,7 @@ with left:
         title="Energy Consumption vs Product Yield"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -198,7 +198,7 @@ with right:
         title="Feed Flow vs Conversion"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 # -----------------------------
 # Yield by Shift & Disturbances
 # -----------------------------
@@ -217,7 +217,7 @@ with left:
         title="Average Yield by Shift"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -234,7 +234,7 @@ with right:
         title="Energy Consumption by Disturbance"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 # -----------------------------
 # Bottleneck Ranking
 # -----------------------------
@@ -280,7 +280,7 @@ fig = px.bar(
 
 )
 
-st.plotly_chart(fig,use_container_width=True)
+st.plotly_chart(fig,width="stretch")
 # -----------------------------
 # SUMMARY
 # -----------------------------
