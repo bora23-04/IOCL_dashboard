@@ -108,7 +108,7 @@ with left:
 
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -127,7 +127,7 @@ with right:
 
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 #------------------------
 #PRIORITY CHARTS
 #------------------------
@@ -163,7 +163,7 @@ fig = px.bar(
 
 )
 
-st.plotly_chart(fig,use_container_width=True)
+st.plotly_chart(fig,width="stretch")
 #-------------------------
 #Recommendation
 #-------------------------
@@ -238,7 +238,7 @@ actions = pd.DataFrame({
 
 })
 
-st.dataframe(actions,use_container_width=True)
+st.dataframe(actions,width="stretch")
 #----------------------
 #SUMMARY
 #----------------------
