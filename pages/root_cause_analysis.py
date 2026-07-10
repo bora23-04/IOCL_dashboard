@@ -122,7 +122,7 @@ fig = px.imshow(
     title="Correlation Heatmap"
 )
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 left,right = st.columns(2)
 
 with left:
@@ -140,7 +140,7 @@ with left:
         title="Average Yield by Disturbance"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 with right:
 
     fig = px.scatter(
@@ -153,7 +153,7 @@ with right:
         title="Reactor Temperature vs Product Yield"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 left,right = st.columns(2)
 
@@ -189,7 +189,7 @@ with left:
         title="Variables Influencing Product Yield"
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 with right:
 
     fig = px.line(
@@ -201,7 +201,7 @@ with right:
 
     fig.update_traces(line_color="#90be6d")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
     #
     # fig = px.histogram(
     #     filtered_df,
@@ -224,7 +224,7 @@ summary = importance.sort_values(
     ascending=False
 )
 
-st.dataframe(summary,use_container_width=True)
+st.dataframe(summary,width="stretch")
 st.divider()
 
 st.subheader("Analysis Insights")
