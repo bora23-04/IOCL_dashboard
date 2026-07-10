@@ -209,7 +209,7 @@ with col1:
         yaxis_title="Yield (%)"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with col2:
     fig = px.line(
@@ -225,7 +225,7 @@ with col2:
         yaxis_title="Conversion (%)"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 col1, col2 = st.columns(2)
 
 with col1:
@@ -237,7 +237,7 @@ with col1:
         # color_discrete_sequence=["red"]
     )
     fig.update_traces(line_color="#f9c74f")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 with col2:
     fig = px.line(
@@ -248,7 +248,7 @@ with col2:
         # color_discrete_sequence=["purple"]
     )
     fig.update_traces(line_color="#f4a261")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 # ==========================================================
 # Monthly / Shift-wise Analysis
@@ -277,7 +277,7 @@ with col1:
         title="Shift-wise Performance"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 with col2:
 
     day_avg = (
@@ -296,7 +296,7 @@ with col2:
         title="Average Yield by Day"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 # ==========================================================
 # Distribution Analysis
 # ==========================================================
@@ -321,7 +321,7 @@ with left:
         yaxis_title="Frequency"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 with right:
 
     fig = px.histogram(
@@ -337,7 +337,7 @@ with right:
         yaxis_title="Frequency"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 # ==========================================================
 # Distribution Analysis
 # ==========================================================
@@ -362,7 +362,7 @@ with left:
         yaxis_title="Product Yield (%)"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 with right:
 
     fig = px.scatter(
@@ -379,4 +379,4 @@ with right:
         yaxis_title="Conversion Rate (%)"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
