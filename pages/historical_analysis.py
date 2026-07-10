@@ -353,8 +353,8 @@ with left:
         x="Reactor_Temperature",
         y="Product_Yield",
         color="Shift",
-        title="Reactor Temperature vs Product Yield",
-        trendline="ols"
+        title="Reactor Temperature vs Product Yield"
+       
     )
 
     fig.update_layout(
@@ -370,8 +370,8 @@ with right:
         x="Catalyst_Activity",
         y="Conversion_Rate",
         color="Shift",
-        title="Catalyst Activity vs Conversion Rate",
-        trendline="ols"
+        title="Catalyst Activity vs Conversion Rate"
+        
     )
 
     fig.update_layout(
