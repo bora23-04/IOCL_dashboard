@@ -181,7 +181,7 @@ fig = go.Figure(go.Indicator(
     }
 ))
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 # ---------------------------------------------------
 # SECOND KPI ROW
 # ---------------------------------------------------
@@ -230,7 +230,7 @@ with left:
     )
     fig.update_traces(line_color="#8ecae6")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -241,7 +241,7 @@ with right:
         title="Conversion Rate Trend"
     )
     fig.update_traces(line_color="#90be6d")
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 # ==========================================================
 # ROW 2
@@ -259,7 +259,7 @@ with left:
     )
     fig.update_traces(line_color="#f9c74f")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -270,7 +270,7 @@ with right:
         title="Reactor Pressure"
     )
     fig.update_traces(line_color="#f4a261")
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 # ==========================================================
 # ROW 3
@@ -288,7 +288,7 @@ with left:
         color_discrete_sequence=px.colors.qualitative.Set3
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -301,7 +301,7 @@ with right:
         color_discrete_sequence = px.colors.qualitative.Set3
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 st.divider()
 
@@ -333,4 +333,4 @@ st.markdown(summary)
 
 st.subheader("Recent Process Data")
 
-st.dataframe(filtered_df.tail(20),use_container_width=True)
+st.dataframe(filtered_df.tail(20),width="stretch")
