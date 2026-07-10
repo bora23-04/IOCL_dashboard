@@ -162,7 +162,7 @@ with left:
     fig.add_hline(y=LSL,line_dash="dash",line_color="red")
     fig.add_hline(y=mean,line_dash="dot",line_color="green")
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -174,7 +174,7 @@ with right:
         color_discrete_sequence=["#AED6F1"]
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 st.subheader("SPC Rules")
 
 if len(outside)==0:
@@ -195,7 +195,7 @@ with left:
         color_discrete_sequence=["#A9DFBF"]
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -208,7 +208,7 @@ with right:
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 # -----------------------------
 # DEFECT ANALYSIS
 # -----------------------------
@@ -232,7 +232,7 @@ with left:
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 
 with right:
 
@@ -245,7 +245,7 @@ with right:
         color_discrete_sequence=px.colors.qualitative.Set3
     )
 
-    st.plotly_chart(fig,use_container_width=True)
+    st.plotly_chart(fig,width="stretch")
 csv = filtered.to_csv(index=False)
 
 st.download_button(
