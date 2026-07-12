@@ -77,28 +77,6 @@ col3.metric("Cp",f"{Cp:.2f}")
 
 col4.metric("Cpk",f"{Cpk:.2f}")
 
-# -----------------------------
-# KPI II
-# -----------------------------
-st.divider()
-col1,col2,col3,col4 = st.columns(4)
-
-col1.metric("Sigma Level",f"{Sigma:.2f}")
-
-outside = filtered[
-    (filtered[target] > USL) |
-    (filtered[target] < LSL)
-]
-
-col2.metric("Defects",len(outside))
-
-defect_rate = len(outside)/len(filtered)*100
-
-col3.metric("Defect Rate",f"{defect_rate:.2f}%")
-
-yield_percent = 100-defect_rate
-
-col4.metric("Process Yield",f"{yield_percent:.2f}%")
 
 st.divider()
 #--------------------------
@@ -204,7 +182,7 @@ with right:
         x="Timestamp",
         y=target,
         color="Shift",
-        title="Scatter Plot",
+        title="Product Yield",
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
 
